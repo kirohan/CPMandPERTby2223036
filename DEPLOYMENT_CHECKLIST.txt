@@ -1,0 +1,10 @@
+GITHUB PAGES DEPLOYMENT CHECKLIST
+
+1. Extract this ZIP on your computer.
+2. Open the extracted folder.
+3. Upload the CONTENTS of the folder, not the ZIP itself.
+4. Confirm that index.html appears in the repository root.
+5. Confirm that assets/CPM_and_PERT_Polished_Digital_Note.pdf exists.
+6. Settings > Pages > Deploy from a branch.
+7. Branch: main | Folder: /(root) | Save.
+8. Do not add a separate GitHub Actions workflow for this package.
