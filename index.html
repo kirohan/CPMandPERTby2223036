@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A polished digital study note on CPM, PERT, float, critical path analysis and project probability." />
+  <meta name="theme-color" content="#0f172a" />
+  <title>CPM and PERT — Digital Note</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="brand-wrap">
+      <div class="brand-mark" aria-hidden="true">CP</div>
+      <div>
+        <p class="eyebrow">Project Management Study Note</p>
+        <h1>CPM and PERT</h1>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <button id="themeToggle" class="button button-ghost" type="button" aria-label="Switch theme">
+        <span aria-hidden="true">◐</span>
+        <span>Theme</span>
+      </button>
+      <a class="button button-primary" href="assets/CPM_and_PERT_Polished_Digital_Note.pdf" download>
+        Download PDF
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="pill">Study-ready • Searchable • Print-friendly</p>
+        <h2>Understand project scheduling from first principles to probability analysis.</h2>
+        <p class="lead">
+          A clean digital edition covering project scheduling, Gantt charts, CPM, PERT,
+          forward and backward passes, float, critical paths, worked examples and formula review.
+        </p>
+        <div class="hero-actions">
+          <button class="button button-primary" type="button" data-open-page="1">Open the note</button>
+          <a class="button button-secondary" href="#formula-sheet">Quick formulas</a>
+        </div>
+      </div>
+
+      <div class="stat-grid" aria-label="Note summary">
+        <article class="stat-card">
+          <strong>15</strong>
+          <span>PDF pages</span>
+        </article>
+        <article class="stat-card">
+          <strong>14</strong>
+          <span>main chapters</span>
+        </article>
+        <article class="stat-card">
+          <strong>3</strong>
+          <span>worked examples</span>
+        </article>
+        <article class="stat-card">
+          <strong>1</strong>
+          <span>formula sheet</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="workspace shell" aria-label="Digital note reader">
+      <aside class="chapter-panel" aria-label="Chapter navigation">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Contents</p>
+            <h3>Jump to a chapter</h3>
+          </div>
+          <button id="closeNav" class="icon-button mobile-only" type="button" aria-label="Close chapter navigation">×</button>
+        </div>
+
+        <nav class="chapter-nav">
+          <button class="chapter-link is-active" data-page="4"><span>01</span>Project Scheduling</button>
+          <button class="chapter-link" data-page="4"><span>02</span>Scheduling Techniques</button>
+          <button class="chapter-link" data-page="5"><span>03</span>CPM and PERT Overview</button>
+          <button class="chapter-link" data-page="6"><span>04</span>CPM Calculations</button>
+          <button class="chapter-link" data-page="7"><span>05</span>Float and Critical Path</button>
+          <button class="chapter-link" data-page="8"><span>06</span>Worked CPM Example 1</button>
+          <button class="chapter-link" data-page="10"><span>07</span>Worked CPM Example 2</button>
+          <button class="chapter-link" data-page="10"><span>08</span>CPM Advantages and Limits</button>
+          <button class="chapter-link" data-page="11"><span>09</span>PERT Time Variability</button>
+          <button class="chapter-link" data-page="12"><span>10</span>Project-Level PERT</button>
+          <button class="chapter-link" data-page="12"><span>11</span>Ten Steps of PERT</button>
+          <button class="chapter-link" data-page="13"><span>12</span>CPM vs PERT</button>
+          <button class="chapter-link" data-page="13"><span>13</span>Worked PERT Example</button>
+          <button class="chapter-link" data-page="15"><span>14</span>Quick Formula Sheet</button>
+        </nav>
+      </aside>
+
+      <section class="reader-panel">
+        <div class="reader-toolbar">
+          <button id="openNav" class="button button-ghost mobile-only" type="button">Chapters</button>
+          <div class="page-controls" aria-label="PDF page controls">
+            <button id="previousPage" class="icon-button" type="button" aria-label="Previous page">←</button>
+            <label for="pageNumber">Page</label>
+            <input id="pageNumber" type="number" min="1" max="15" value="1" inputmode="numeric" />
+            <span>of 15</span>
+            <button id="nextPage" class="icon-button" type="button" aria-label="Next page">→</button>
+          </div>
+          <a class="button button-secondary" href="assets/CPM_and_PERT_Polished_Digital_Note.pdf" target="_blank" rel="noopener">Open full screen</a>
+        </div>
+
+        <div class="pdf-frame-wrap">
+          <object id="pdfViewer" class="pdf-frame" data="assets/CPM_and_PERT_Polished_Digital_Note.pdf#page=1&view=FitH" type="application/pdf">
+            <div class="pdf-fallback">
+              <h3>Your browser cannot display the embedded PDF.</h3>
+              <p>Open the full document or download it to continue reading.</p>
+              <a class="button button-primary" href="assets/CPM_and_PERT_Polished_Digital_Note.pdf">Open PDF</a>
+            </div>
+          </object>
+        </div>
+      </section>
+    </section>
+
+    <section id="formula-sheet" class="formula-section shell">
+      <div class="section-heading">
+        <p class="eyebrow">Revision aid</p>
+        <h2>Quick formula sheet</h2>
+        <p>Use these formulas for CPM and PERT calculations.</p>
+      </div>
+
+      <div class="formula-grid">
+        <article class="formula-card">
+          <h3>Forward pass</h3>
+          <p><code>EF = ES + duration</code></p>
+          <p><code>ES = maximum EF of predecessors</code></p>
+        </article>
+        <article class="formula-card">
+          <h3>Backward pass</h3>
+          <p><code>LS = LF - duration</code></p>
+          <p><code>LF = minimum LS of successors</code></p>
+        </article>
+        <article class="formula-card">
+          <h3>Total float</h3>
+          <p><code>TF = LS - ES = LF - EF</code></p>
+          <p>Critical activities have <code>TF = 0</code>.</p>
+        </article>
+        <article class="formula-card">
+          <h3>Free float</h3>
+          <p><code>FF = minimum ES of successors - EF</code></p>
+        </article>
+        <article class="formula-card">
+          <h3>PERT expected time</h3>
+          <p><code>te = (a + 4m + b) / 6</code></p>
+        </article>
+        <article class="formula-card">
+          <h3>PERT uncertainty</h3>
+          <p><code>σ = (b - a) / 6</code></p>
+          <p><code>variance = σ²</code></p>
+        </article>
+        <article class="formula-card formula-card-wide">
+          <h3>Completion probability</h3>
+          <p><code>Z = (target duration - expected project duration) / project standard deviation</code></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <p>CPM and PERT — polished digital note based on the handwritten source by 2223036.</p>
+    <a href="assets/CPM_and_PERT_Polished_Digital_Note.pdf" download>Download PDF</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
